@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b5c3d4fe7a.js" crossorigin="anonymous"></script>
+    <title>CIVF</title>
+  </head>
+  <body>
+    <nav class="fixed w-screen h-20 flex justify-center content-center z-10">
+      <div class="flex items-center h-full px-8 w-full lg:max-w-8xl content-center">
+        <a class="flex p-2 justify-center lg:justify-start space-x-2 mr-3" href="#">
+          <img width="180" height="180" class="p-2 w-36 bg-transparent" style="color: transparent" src="/logo.png" />
+          <img
+            width="180"
+            height="180"
+            class="p-2 w-72 bg-transparent"
+            style="color: transparent"
+            src="/images/charusat.webp"
+          />
+        </a>
+        <button class="text-gray-500 absolute left-8 lg:hidden" id="navBtn" type>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 6H12H19M5 12H19M5 18H19" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </button>
+        <div class="mx-4 hidden lg:flex lg:justify-end">
+          <ul class="flex justify-around w-full text- font-semibold ml-9">
+            <li
+              class="cursor-pointer p-2 transition-colors hover:transition-all border-b-4 border-transparent hover:border-purple-600 hover:text-purple-700"
+            >
+              <a class="" href="#">About Us</a>
+            </li>
+            <li>
+              <button
+                class="cursor-pointer p-2 transition-colors hover:transition-all border-b-4 border-transparent hover:border-purple-600 hover:text-purple-700"
+                id="navMenuBtn"
+                type="button"
+              >
+                Acceleration Program
+                <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="absolute mt-1 top-20 bg-white rounded-md shadow-lg px-8 py-5 hidden">
+                <ul class="grid grid-cols-2 gap-x-5">
+                  <a href="#"><li class="p-2 hover:bg-gray-200 rounded">About Program</li></a
+                  ><a href="#"><li class="p-2 hover:bg-gray-200 rounded">Application Process</li></a
+                  ><a href="#"><li class="p-2 hover:bg-gray-200 rounded">Apply Now</li></a
+                  ><a href="#"><li class="p-2 hover:bg-gray-200 rounded">Track Your Application</li></a>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button
+                class="cursor-pointer p-2 transition-colors hover:transition-all border-b-4 border-transparent hover:border-purple-600 hover:text-purple-700"
+                id="navMenuBtn"
+                type="button"
+              >
+                Benefits &nbsp; <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="absolute mt-1 top-20 bg-white rounded-md shadow-lg px-8 py-5 hidden">
+                <ul class="grid grid-cols-2 gap-x-5">
+                  <a href="#"><li class="p-2 hover:bg-gray-200 rounded">Facilities</li></a
+                  ><a href="#"><li class="p-2 hover:bg-gray-200 rounded">Services</li></a>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="cursor-pointer p-2 transition-colors hover:transition-all border-b-4 border-transparent hover:border-purple-600 hover:text-purple-700"
+            >
+              <a class="" href="#">Start-Up Portfolio</a>
+            </li>
+            <li>
+              <button
+                class="cursor-pointer p-2 transition-colors hover:transition-all border-b-4 border-transparent hover:border-purple-600 hover:text-purple-700"
+                id="navMenuBtn"
+                type="button"
+              >
+                CIVF Services &nbsp;
+                <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="absolute mt-1 top-20 bg-white rounded-md shadow-lg px-8 py-5 hidden">
+                <ul class="grid grid-cols-2 gap-x-5">
+                  <a href="#"><li class="p-2 hover:bg-gray-200 rounded">For Industries</li></a
+                  ><a href="#"><li class="p-2 hover:bg-gray-200 rounded">For Academia</li></a>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="cursor-pointer p-2 transition-colors hover:transition-all border-b-4 border-transparent hover:border-purple-600 hover:text-purple-700"
+            >
+              <a class="" href="#">Career at CIVF</a>
+            </li>
+            <li>
+              <button
+                class="cursor-pointer p-2 transition-colors hover:transition-all border-b-4 border-transparent hover:border-purple-600 hover:text-purple-700"
+                id="navMenuBtn"
+                type="button"
+              >
+                Contact &nbsp; <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="absolute mt-1 top-20 bg-white rounded-md shadow-lg px-8 py-5 hidden">
+                <ul class="grid grid-cols-2 gap-x-5">
+                  <a href="#"><li class="p-2 hover:bg-gray-200 rounded">Contact us</li></a
+                  ><a href="#"><li class="p-2 hover:bg-gray-200 rounded">FAQs</li></a
+                  ><a href="#"><li class="p-2 hover:bg-gray-200 rounded">Gallery</li></a
+                  ><a href="#"><li class="p-2 hover:bg-gray-200 rounded">Donate</li></a>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="pt-16 bg-gradient-to-tr from-red-800 to-purple-500 min-h-screen flex content-center justify-center">
+      <div class="mx-auto lg:w-11/12 lg:grid lg:grid-cols-5 lg:gap-12">
+        <div class="w-full p-6 sm:p-16 lg:col-span-3 m-auto">
+          <div>
+            <h1 class="text-6xl font-extrabold text-white">CHARUSAT Innovative Ventures Foundation</h1>
+            <p class="lg:text-2xl text-white mt-4 text-justify">
+              We are an Accelerator with a wide network of investors, mentors, and successful entrepreneurs who are
+              willing to invest their time, expertise and money in helping enterprises to flourish. We also extend
+              services for Enterprises' Growth.
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-2 m-auto">
+          <img width="800" height="800" class="m-auto" style="color: transparent" src="/images/hero-1.svg" />
+        </div>
+      </div>
+    </section>
+    <section
+      class="pt-10 bg-[url('/images/vbg2.jpg')] bg-cover pb-20 text-white flex flex-col content-center justify-center"
+    >
+      <div class="mx-auto lg:w-5/6 lg:grid lg:grid-cols-2 lg:gap-12 mt-7 px-10">
+        <div
+          class="w-full mb-10 p-6 sm:p-16 cursor-pointer mx-auto bg-gradient-to-tr to-purple-400/20 from-sky-600/20 border-sky-700 backdrop-blur-3xl text-rose-600 shadow-lg hover:shadow-xl transition-all hover:transition-all"
+        >
+          <h3 class="text-[2.5rem] font-bold text-white text-center">Vision</h3>
+          <ul class="mt-4 text-white text-[2rem] text-center">
+            <li>
+              To emerge as a foremost organization leveraging innovation for the benefit of society through supporting
+              new ventures.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-full mb-10 p-6 sm:p-16 cursor-pointer mx-auto bg-gradient-to-tr to-purple-400/20 from-sky-600/20 border-sky-700 backdrop-blur-3xl text-rose-600 shadow-lg hover:shadow-xl transition-all hover:transition-all"
+        >
+          <h3 class="text-[2.5rem] font-bold text-white text-center">Mission</h3>
+          <ul class="mt-4 text-white text-[2rem] text-center">
+            <li>To create a vibrant ecosystem to accelerate the growth of start-ups.</li>
+            <li class="mt-5">To facilitate commercialization of IPR of the University for Societal Development.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div class="bg-rose-100 py-10">
+        <h1 class="text-3xl lg:text-5xl font-extrabold text-center text-gray-800">Why Choose Us?</h1>
+        <div class="mx-auto lg:w-full md:grid-cols-2 grid gap-12 lg:grid-cols-5 mt-7 px-10">
+          <div
+            class="flex justify-center flex-col bg-[url('/images/why1.jpg')] text-white items-center w-full mb-10 p-10 sm:py-14 bg-no-repeat bg-cover cursor-pointer mx-auto bg-orange-500 shadow-lg hover:shadow-xl transition-all hover:transition-all"
+          >
+            <div class="text-purple-800 rounded-full bg-white p-7 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="w-16 h-16">
+                <path
+                  d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM96 128H0V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V128zM48 352c-8.8 0-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16s-7.2 16-16 16zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V128H544zm64 208c0 8.8-7.2 16-16 16s-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold">Huge Network</h3>
+          </div>
+          <div
+            class="flex justify-center flex-col bg-[url('/images/why2.jpg')] text-white items-center w-full mb-10 p-10 sm:py-14 bg-no-repeat bg-cover cursor-pointer mx-auto bg-white shadow-lg hover:shadow-xl transition-all hover:transition-all"
+          >
+            <div class="text-green-700 rounded-full bg-white p-7 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="w-16 h-16">
+                <path
+                  d="M144 160c44.2 0 80-35.8 80-80s-35.8-80-80-80S64 35.8 64 80s35.8 80 80 80zm368 0c44.2 0 80-35.8 80-80s-35.8-80-80-80s-80 35.8-80 80s35.8 80 80 80zM0 298.7C0 310.4 9.6 320 21.3 320H234.7c.2 0 .4 0 .7 0c-26.6-23.5-43.3-57.8-43.3-96c0-7.6 .7-15 1.9-22.3c-13.6-6.3-28.7-9.7-44.6-9.7H106.7C47.8 192 0 239.8 0 298.7zM320 320c24 0 45.9-8.8 62.7-23.3c2.5-3.7 5.2-7.3 8-10.7c2.7-3.3 5.7-6.1 9-8.3C410 262.3 416 243.9 416 224c0-53-43-96-96-96s-96 43-96 96s43 96 96 96zm65.4 60.2c-10.3-5.9-18.1-16.2-20.8-28.2H261.3C187.7 352 128 411.7 128 485.3c0 14.7 11.9 26.7 26.7 26.7H455.2c-2.1-5.2-3.2-10.9-3.2-16.4v-3c-1.3-.7-2.7-1.5-4-2.3l-2.6 1.5c-16.8 9.7-40.5 8-54.7-9.7c-4.5-5.6-8.6-11.5-12.4-17.6l-.1-.2-.1-.2-2.4-4.1-.1-.2-.1-.2c-3.4-6.2-6.4-12.6-9-19.3c-8.2-21.2 2.2-42.6 19-52.3l2.7-1.5c0-.8 0-1.5 0-2.3s0-1.5 0-2.3l-2.7-1.5zM533.3 192H490.7c-15.9 0-31 3.5-44.6 9.7c1.3 7.2 1.9 14.7 1.9 22.3c0 17.4-3.5 33.9-9.7 49c2.5 .9 4.9 2 7.1 3.3l2.6 1.5c1.3-.8 2.6-1.6 4-2.3v-3c0-19.4 13.3-39.1 35.8-42.6c7.9-1.2 16-1.9 24.2-1.9s16.3 .6 24.2 1.9c22.5 3.5 35.8 23.2 35.8 42.6v3c1.3 .7 2.7 1.5 4 2.3l2.6-1.5c16.8-9.7 40.5-8 54.7 9.7c2.3 2.8 4.5 5.8 6.6 8.7c-2.1-57.1-49-102.7-106.6-102.7zm91.3 163.9c6.3-3.6 9.5-11.1 6.8-18c-2.1-5.5-4.6-10.8-7.4-15.9l-2.3-4c-3.1-5.1-6.5-9.9-10.2-14.5c-4.6-5.7-12.7-6.7-19-3L574.4 311c-8.9-7.6-19.1-13.6-30.4-17.6v-21c0-7.3-4.9-13.8-12.1-14.9c-6.5-1-13.1-1.5-19.9-1.5s-13.4 .5-19.9 1.5c-7.2 1.1-12.1 7.6-12.1 14.9v21c-11.2 4-21.5 10-30.4 17.6l-18.2-10.5c-6.3-3.6-14.4-2.6-19 3c-3.7 4.6-7.1 9.5-10.2 14.6l-2.3 3.9c-2.8 5.1-5.3 10.4-7.4 15.9c-2.6 6.8 .5 14.3 6.8 17.9l18.2 10.5c-1 5.7-1.6 11.6-1.6 17.6s.6 11.9 1.6 17.5l-18.2 10.5c-6.3 3.6-9.5 11.1-6.8 17.9c2.1 5.5 4.6 10.7 7.4 15.8l2.4 4.1c3 5.1 6.4 9.9 10.1 14.5c4.6 5.7 12.7 6.7 19 3L449.6 457c8.9 7.6 19.2 13.6 30.4 17.6v21c0 7.3 4.9 13.8 12.1 14.9c6.5 1 13.1 1.5 19.9 1.5s13.4-.5 19.9-1.5c7.2-1.1 12.1-7.6 12.1-14.9v-21c11.2-4 21.5-10 30.4-17.6l18.2 10.5c6.3 3.6 14.4 2.6 19-3c3.7-4.6 7.1-9.4 10.1-14.5l2.4-4.2c2.8-5.1 5.3-10.3 7.4-15.8c2.6-6.8-.5-14.3-6.8-17.9l-18.2-10.5c1-5.7 1.6-11.6 1.6-17.5s-.6-11.9-1.6-17.6l18.2-10.5zM552 384c0 22.1-17.9 40-40 40s-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center">Flexibility</h3>
+          </div>
+          <div
+            class="flex justify-center flex-col bg-[url('/images/why3.jpg')] text-white items-center w-full mb-10 p-10 sm:py-14 bg-no-repeat bg-cover cursor-pointer mx-auto bg-white shadow-lg hover:shadow-xl transition-all hover:transition-all"
+          >
+            <div class="text-orange-600 rounded-full bg-white p-7 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="w-16 h-16">
+                <path
+                  d="M144 160c-44.2 0-80-35.8-80-80S99.8 0 144 0s80 35.8 80 80s-35.8 80-80 80zm368 0c-44.2 0-80-35.8-80-80s35.8-80 80-80s80 35.8 80 80s-35.8 80-80 80zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM416 224c0 53-43 96-96 96s-96-43-96-96s43-96 96-96s96 43 96 96zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center">Experienced Team</h3>
+          </div>
+          <div
+            class="flex justify-center flex-col bg-[url('/images/why4.jpg')] text-white items-center w-full mb-10 p-10 sm:py-14 bg-no-repeat bg-cover cursor-pointer mx-auto bg-white shadow-lg hover:shadow-xl transition-all hover:transition-all"
+          >
+            <div class="text-yellow-500 rounded-full bg-white p-7 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-16 h-16">
+                <path
+                  d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center">Integral Values</h3>
+          </div>
+          <div
+            class="flex justify-center flex-col bg-[url('/images/why5.jpg')] text-white items-center w-full mb-10 p-10 sm:py-14 bg-no-repeat bg-cover cursor-pointer mx-auto bg-white shadow-lg hover:shadow-xl transition-all hover:transition-all"
+          >
+            <div class="text-[#607258] rounded-full bg-white p-7 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="w-16 h-16">
+                <path
+                  d="M434.7 64h-85.9c-8 0-15.7 3-21.6 8.4l-98.3 90c-.1.1-.2.3-.3.4-16.6 15.6-16.3 40.5-2.1 56 12.7 13.9 39.4 17.6 56.1 2.7.1-.1.3-.1.4-.2l79.9-73.2c6.5-5.9 16.7-5.5 22.6 1 6 6.5 5.5 16.6-1 22.6l-26.1 23.9L504 313.8c2.9 2.4 5.5 5 7.9 7.7V128l-54.6-54.6c-5.9-6-14.1-9.4-22.6-9.4zM544 128.2v223.9c0 17.7 14.3 32 32 32h64V128.2h-96zm48 223.9c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM0 384h64c17.7 0 32-14.3 32-32V128.2H0V384zm48-63.9c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16c0-8.9 7.2-16 16-16zm435.9 18.6L334.6 217.5l-30 27.5c-29.7 27.1-75.2 24.5-101.7-4.4-26.9-29.4-24.8-74.9 4.4-101.7L289.1 64h-83.8c-8.5 0-16.6 3.4-22.6 9.4L128 128v223.9h18.3l90.5 81.9c27.4 22.3 67.7 18.1 90-9.3l.2-.2 17.9 15.5c15.9 13 39.4 10.5 52.3-5.4l31.4-38.6 5.4 4.4c13.7 11.1 33.9 9.1 45-4.7l9.5-11.7c11.2-13.8 9.1-33.9-4.6-45.1z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center">Strong support system of university</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-14 bg-rose-50 flex flex-col content-center justify-center">
+      <h1 class="text-3xl mb-10 lg:text-5xl font-extrabold text-center text-gray-800">CIVF in Numbers</h1>
+      <div class="lg:w-5/6 mx-auto flex flex-wrap justify-center items-center gap-x-10 gap-y-7">
+        <div class="p-16 w-56 h-56 mx-auto bg-white rounded-full flex flex-col justify-center items-center">
+          <h1 class="text-5xl font-bold text-sky-600">9987</h1>
+          <h3 class="text-xl text-gray-800 my-4 mx-auto text-center">Awareness Programs</h3>
+        </div>
+        <div class="p-16 w-56 h-56 mx-auto bg-white rounded-full flex flex-col justify-center items-center">
+          <h1 class="text-5xl font-bold text-rose-600">436</h1>
+          <h3 class="text-xl text-gray-800 my-4 mx-auto text-center">Expert Talks</h3>
+        </div>
+        <div class="p-16 w-56 h-56 mx-auto bg-white rounded-full flex flex-col justify-center items-center">
+          <h1 class="text-5xl font-bold text-yellow-600">481</h1>
+          <h3 class="text-xl text-gray-800 my-4 mx-auto text-center">Project Supported</h3>
+        </div>
+        <div class="p-16 w-56 h-56 mx-auto bg-white rounded-full flex flex-col justify-center items-center">
+          <h1 class="text-5xl font-bold text-green-600">236</h1>
+          <h3 class="text-xl text-gray-800 my-4 mx-auto text-center">Proof of Concept Supported</h3>
+        </div>
+        <div class="p-16 w-56 h-56 mx-auto bg-white rounded-full flex flex-col justify-center items-center">
+          <h1 class="text-5xl font-bold text-blue-600">136</h1>
+          <h3 class="text-xl text-gray-800 my-4 mx-auto text-center">Sanctioned for Financial Support</h3>
+        </div>
+        <div class="p-16 w-56 h-56 mx-auto bg-white rounded-full flex flex-col justify-center items-center">
+          <h1 class="text-5xl font-bold text-purple-600">42</h1>
+          <h3 class="text-xl text-gray-800 my-4 mx-auto text-center">Eligible for Seed Money</h3>
+        </div>
+        <div class="p-16 w-56 h-56 mx-auto bg-white rounded-full flex flex-col justify-center items-center">
+          <h1 class="text-5xl font-bold text-pink-600">29</h1>
+          <h3 class="text-xl text-gray-800 my-4 mx-auto text-center">Companies Registered</h3>
+        </div>
+      </div>
+    </section>
+    <div class="md:px-10 pt-5 mb-32 px-4">
+      <h2 class="text-5xl font-extrabold text-center text-gray-800">Announcement</h2>
+      <div class="text-center text-gray-800 swiper-backface-hidden">
+        <div class="grid grid-cols-4">
+          <div style="margin-right: 50px">
+            <div class="bg-white p-5 sm:w mx-auto shadow-lg relative m-10 md:mx-0 md:my-10 snap-start rounded-lg h-96">
+              <div class="mx-auto w-full h-3/5">
+                <img src="/images/An1.webp" class="h-full w-full object-cover rounded-lg" />
+              </div>
+              <h3 class="font-lg font-semibold my-5 line-clamp-2">
+                CIVF launched Patent Commercialization Project (PCP) on 17th ...
+              </h3>
+              <button class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-rose-50 md:px-10 pt-5 mb-32 px-4">
+      <h2 class="text-5xl font-extrabold text-center text-gray-800">News</h2>
+      <div class="text-center text-gray-800">
+        <div class="grid grid-cols-4">
+          <div style="margin-right: 50px">
+            <div class="bg-white p-5 mx-auto shadow-lg relative m-10 md:mx-0 md:my-10 snap-start rounded-lg h-96">
+              <div class="mx-auto h-3/5">
+                <img
+                  src="/images/news/Divya_Bhaskar_CHRUSAT___Patten_Vire_News_12-10-2022.jpg"
+                  alt=""
+                  width="500"
+                  height="500"
+                  class="h-full object-cover rounded-lg"
+                />
+              </div>
+              <h3 class="font-lg font-semibold my-5 line-clamp-2">
+                CIVF has been a major success for Charusat in its new endeavour.
+              </h3>
+              <button class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div style="margin-right: 50px">
+            <div class="bg-white p-5 mx-auto shadow-lg relative m-10 md:mx-0 md:my-10 snap-start rounded-lg h-96">
+              <div class="mx-auto h-3/5">
+                <img
+                  src="/images/picture4.png"
+                  alt=""
+                  width="500"
+                  height="500"
+                  class="h-full object-cover rounded-lg"
+                />
+              </div>
+              <h3 class="font-lg font-semibold my-5 line-clamp-2">
+                National Research Development Corporation and Charusat University signed a memorandum of understanding.
+              </h3>
+              <button class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div style="margin-right: 50px">
+            <div class="bg-white p-5 mx-auto shadow-lg relative m-10 md:mx-0 md:my-10 snap-start rounded-lg h-96">
+              <div class="mx-auto w-full h-3/5">
+                <img
+                  src="/images/news/Anand_Today_Patten_Vire_News_10-10-2022.jpg"
+                  alt=""
+                  width="500"
+                  height="500"
+                  class="h-full w-full object-cover rounded-lg"
+                />
+              </div>
+              <h3 class="font-lg font-semibold my-5 line-clamp-2">Anand Today Patten Vire News</h3>
+              <button class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div style="margin-right: 50px">
+            <div class="bg-white p-5 mx-auto shadow-lg relative m-10 md:mx-0 md:my-10 snap-start rounded-lg h-96">
+              <div class="mx-auto w-full h-3/5">
+                <img
+                  src="/images/news/Sandesh_CIVF_Sarthi_Meet_News_09-05-2023.png"
+                  alt=""
+                  width="500"
+                  height="500"
+                  class="h-full w-full object-cover rounded-lg"
+                />
+              </div>
+              <h3 class="font-lg font-semibold my-5 line-clamp-2">Sandesh CIVF Sarthi Meet News 09-05-2023</h3>
+              <button class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-2 flex justify-end">
+        <a class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">View all</a>
+      </div>
+      <br />
+    </div>
+    <div class="md:px-10 pt-5 mb-4 px-4">
+      <h2 class="text-5xl font-extrabold text-center text-gray-800">Events</h2>
+      <div class="text-center text-gray-800">
+        <div class="grid grid-cols-4">
+          <div style="margin-right: 50px">
+            <div class="bg-white p-5 sm:w mx-auto shadow-lg relative m-10 md:mx-0 md:my-10 snap-start rounded-lg h-96">
+              <div class="mx-auto w-full h-3/5">
+                <img src="/images/events/Picture1.jpg" class="h-full w-full object-cover rounded-lg" />
+              </div>
+              <h3 class="font-lg font-semibold my-5 line-clamp-2">
+                “FUELING ENTREPRENEURIAL SPIRIT AMONGST WOMEN” PANEL DISCUSSI...
+              </h3>
+              <button class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div style="margin-right: 50px">
+            <div class="bg-white p-5 sm:w mx-auto shadow-lg relative m-10 md:mx-0 md:my-10 snap-start rounded-lg h-96">
+              <div class="mx-auto w-full h-3/5">
+                <img src="/images/events/Picture2.jpg" class="h-full w-full object-cover rounded-lg" />
+              </div>
+              <h3 class="font-lg font-semibold my-5 line-clamp-2">
+                "RESEARCH, CONSULTANCY AND TESTING LABS AT CHARUSAT UNIVERSIT...
+              </h3>
+              <button class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div style="margin-right: 50px">
+            <div class="bg-white p-5 sm:w mx-auto shadow-lg relative m-10 md:mx-0 md:my-10 snap-start rounded-lg h-96">
+              <div class="mx-auto w-full h-3/5">
+                <img src="/images/events/Picture3.jpg" class="h-full w-full object-cover rounded-lg" />
+              </div>
+              <h3 class="font-lg font-semibold my-5 line-clamp-2">Anand Start-up Summit...</h3>
+              <button class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">
+                Read more
+              </button>
+            </div>
+          </div>
+          <div style="margin-right: 50px">
+            <div class="bg-white p-5 sm:w mx-auto shadow-lg relative m-10 md:mx-0 md:my-10 snap-start rounded-lg h-96">
+              <div class="mx-auto w-full h-3/5">
+                <img src="/images/events/Picture14.jpg" class="h-full w-full object-cover rounded-lg" />
+              </div>
+              <h3 class="font-lg font-semibold my-5 line-clamp-2">CIVF INVESTOR MEET...</h3>
+              <button class="bg-rose-600 text-sm text-white py-2 px-5 rounded-lg hover:bg-rose-800 transition-all">
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-center w-full text-6xl md:text-8xl opacity-30 text-gray-500 font-bold">Testimonials</h2>
+    <div class="mb-8 mt-8 flex flex-wrap justify-center text-gray-900">
+      <div class="w-full text-center shrink-0 grow-0 basis-auto px-3 lg:w-8/12">
+        <p class="mb-2 text-gray-800 text-xl font-semibold">
+          <svg focusable="false" class="inline-block w-6 pr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              fill="currentColor"
+              d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+            ></path></svg
+          >The Support was exactly what we needed, exactly at the right time. With practical suggestions that helped me
+          overcome our decision paralysis.
+        </p>
+        <hr class="my-5 mx-auto h-1 w-48 rounded border-0 dark:bg-gray-500" />
+        <h5 class="mb-3 text-2xl font-bold">Devansh Acharya</h5>
+      </div>
+    </div>
+    <footer class="bg-gradient-to-br from-red-800 to-purple-500 p-12">
+      <div class="mx-auto flex-col lg:w-5/6 lg:grid lg:grid-cols-3 lg:gap-5 flex items-center justify-center">
+        <div class="p-10">
+          <div class="w-2/3 mx-auto lg:mx-0">
+            <img width="200" height="200" class="bg-white p-2 rounded" style="color: transparent" src="/logo.png" />
+            <figcaption class="pt-3 text-white font-bold text-center italic">"A Section-8 Company"</figcaption>
+            <img
+              width="200"
+              height="200"
+              class="bg-white mt-3 p-2 rounded"
+              style="color: transparent"
+              src="/images/charusat.webp"
+            />
+          </div>
+          <hr class="mt-5" />
+          <h6 class="font-bold mt-5 text-xl text-white col-span-2 mb-3">
+            <div class="text-center lg:text-left">
+              <i class="mr-2 fas fa-phone-alt text-white"></i> <span class="font-bold"></span>02697-265095
+            </div>
+            <div class="my-3 text-center lg:text-left">
+              <i class="mr-2 fas fa-envelope text-white"></i> <span class="font-bold"></span>seo@civf.co.in
+            </div>
+          </h6>
+          <hr class="mt-5" />
+          <h6 class="font-bold mt-5 text-xl text-white col-span-2 mb-3 text-center lg:text-left">Follow us</h6>
+          <div class="flex mt-4 gap-6 sm:mt-0">
+            <a href="#" class="text-gray-50 hover:text-gray-900"
+              ><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                ></path></svg
+              ><span class="sr-only">Facebook page</span></a
+            ><a href="#" class="text-gray-50 hover:text-gray-900"
+              ><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                ></path></svg
+              ><span class="sr-only">Instagram page</span></a
+            ><a href="#" class="text-gray-50 hover:text-gray-900"
+              ><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                ></path></svg
+              ><span class="sr-only">Twitter page</span></a
+            ><a href="#" class="text-gray-50 hover:text-gray-900"
+              ><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clip-rule="evenodd"
+                ></path></svg
+              ><span class="sr-only">GitHub account</span></a
+            ><a href="#" class="text-gray-50 hover:text-gray-900"
+              ><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                  clip-rule="evenodd"
+                ></path></svg
+              ><span class="sr-only">Dribble account</span></a
+            >
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-1 p-7 col-span-2">
+          <h6 class="font-bold text-2xl text-center lg:text-left text-white col-span-2 mb-3">Quick Links</h6>
+          <hr class="col-span-2 lg:w-10/12" />
+          <a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#"
+            >About Us</a
+          ><a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#"
+            >Acceleration Program</a
+          ><a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#"
+            >Start-up Portfolio</a
+          ><a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#"
+            >Facilities</a
+          ><a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#"
+            >Services</a
+          ><a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#"
+            >Blog/Reports</a
+          ><a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#"
+            >Donate</a
+          ><a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#">FAQs</a
+          ><a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#"
+            >Career at CIVF</a
+          ><a class="font-semibold text-lg relative text-gray-300 mt-4 hover:text-white transition-all" href="#"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+      <div class="mt-8 font-bold w-full text-center text-white text-xl">
+        <p>© CIVF 2024</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const nav = document.querySelector("nav");
+    const menuTxts = document.getElementsByClassName("hover:bg-gray-200");
+
+    function navB(e) {
+      if (window.scrollY >= 50) {
+        nav.classList.add("shadow-lg");
+        nav.classList.add("bg-white");
+        nav.classList.add("text-black");
+        nav.classList.remove("text-white");
+        nav.style.color = "black";
+      } else {
+        nav.classList.remove("shadow-lg");
+        nav.classList.remove("bg-white");
+        nav.classList.add("text-white");
+        nav.classList.remove("text-black");
+        nav.style.color = "white";
+      }
+    }
+    navB();
+    window.onscroll = navB;
+
+    const navBtns = document.querySelectorAll("[id=navMenuBtn]");
+    for (let i = 0; i < navBtns.length; i++) {
+      navBtns[i].onclick = function (e) {
+        navBtns[i].nextElementSibling.classList.toggle("hidden");
+        navBtns[i].nextElementSibling.classList.toggle("text-black");
+      };
+    }
+  </script>
+</html>
